@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+	/*body {
+		margin: 0;
+		padding: 0;
+		color: #2a2a2a;
+		background: #5a5a5a;
+		font-size: 20px;
+		line-height: 1.5em;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+
+	h1 {
+		}
+
+	h2 {
+		color: deeppink;
+}
+	a {
+		color:chocolate;
+		}
+
+	a:hover {
+		color:aqua;
+		}
+
+	nav.sitenav {
+		background-color: violet;
+		padding: 0;
+		}
+
+	nav.sitenav a {
+		display: inline-block; should help match the height of anchor element with that of the nav element -- for the color reverse hover effect 
+		color: aqua;
+		background-color: violet;
+		font-weight: bold;
+		font-size: 110%;
+		text-decoration: none;
+		padding: 4px;
+		}
+
+	nav.sitenav a:hover {
+		color: violet;
+		background-color: aqua;
+		}
+
+	nav.pagenav a {
+		text-decoration: none;
+		}
+
+	a.pagenav-link {
+		text-decoration: none;
+		}
+
+	th {
+		text-align: left;
+		}*/
+
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	}
+
+	.wrapper {
+		width: 900px;
+		padding: 20px 40px;
+		margin: 0 auto;
+		border: 0px red solid;
+		background: #ffffff;
+		}
+
+	body {
+		  background: #B8B8B8;
+		  color: black;
+		  line-height: 1.5;
+		}
+
+	.site-header {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  background: #7A7A7A;
+		  padding: 1.2rem 2rem;
+		  border-radius: 8px;
+		  margin-bottom: 2rem;
+		}
+
+	.site-nav a {
+		  color: white;
+		  text-decoration: none;
+		  margin-left: 1.5rem;
+		  font-weight: 500;
+		  transition: 0.2s;
+	}
+
+	.site-nav a:hover {
+	  	color: black;
+	}
+
+	.nav-header{
+		  display: flex;
+		   justify-content: center;
+		  align-items: center;
+		  border-radius: 8px;
+		  padding: 1rem 2rem
+	}
+
+	.page-nav a{
+		 color: dimgray;
+		 text-decoration: none;
+		 font-weight: 500;
+		 transition: 0.2s;	
+	}
+
+	.page-nav a:hover {
+	  	color: black;
+	}
+
+	
+	h1 {
+	  text-align: center;
+	  font-size: 2.4rem;
+	  margin: 2rem 0;
+	  color: black;
+	}
+
+	h2 {
+	  margin-top: 3rem;
+	  margin-bottom: 1rem;
+	  color: black;
+	  display: inline-block;
+	  padding-bottom: 0.3rem;
+	}
+
+	h3 {
+	  margin: 1rem 0 0.5rem;
+	  color: black;
+	}
+
+	p {
+	  color: black;
+		padding-bottom: 1rem;
+	}
+	
+	p a{
+		color: mediumpurple;
+		text-decoration: underline;
+	
+	}
+
+	a[href="#"] {
+	  color: rebeccapurple;
+	  text-decoration: none;
+	  font-weight: 500;
+	}
+
+	a[href="#"]:hover {
+	  text-decoration: underline;
+	}
+
+	  .site-header {
+		flex-direction: column;
+		gap: 1rem;
+	  }
