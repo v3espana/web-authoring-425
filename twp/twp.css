@@ -1,61 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-	/*body {
-		margin: 0;
-		padding: 0;
-		color: #2a2a2a;
-		background: #5a5a5a;
-		font-size: 20px;
-		line-height: 1.5em;
-		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-		}
-
-	h1 {
-		}
-
-	h2 {
-		color: deeppink;
-}
-	a {
-		color:chocolate;
-		}
-
-	a:hover {
-		color:aqua;
-		}
-
-	nav.sitenav {
-		background-color: violet;
-		padding: 0;
-		}
-
-	nav.sitenav a {
-		display: inline-block; should help match the height of anchor element with that of the nav element -- for the color reverse hover effect 
-		color: aqua;
-		background-color: violet;
-		font-weight: bold;
-		font-size: 110%;
-		text-decoration: none;
-		padding: 4px;
-		}
-
-	nav.sitenav a:hover {
-		color: violet;
-		background-color: aqua;
-		}
-
-	nav.pagenav a {
-		text-decoration: none;
-		}
-
-	a.pagenav-link {
-		text-decoration: none;
-		}
-
-	th {
-		text-align: left;
-		}*/
-
 	* {
 	  margin: 0;
 	  padding: 0;
@@ -190,22 +134,23 @@
 		justify-content: space-between;
 	}
 
-.gallery-item h3{
-	margin: 0;
-	line-height: 135%;
-	font-size: 90%;
-}
+	.gallery-item h3{
+		margin: 0;
+		line-height: 135%;
+		font-size: 90%;
+	}
 
-table i{
-	color: rebeccapurple;
-}
+	table i{
+		color: rebeccapurple;
+	}
 
-.key i{
-	color: rebeccapurple;
-}
+	.key i{
+		color: rebeccapurple;
+	}
 
-.key{
-	display: flex;
-	align-items: left;
-	gap: 0.75rem;
-}
+	.key{
+		display: flex;
+		align-items: left;
+		gap: 0.75rem;
+	}
+
