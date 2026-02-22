@@ -72,7 +72,7 @@
 		}
 
 	body {
-		  background: #B8B8B8;
+		  background: mediumpurple;
 		  color: black;
 		  line-height: 1.5;
 		}
@@ -81,10 +81,26 @@
 		  display: flex;
 		  justify-content: space-between;
 		  align-items: center;
-		  background: #7A7A7A;
+		  background: mediumpurple;
 		  padding: 1.2rem 2rem;
 		  border-radius: 8px;
 		  margin-bottom: 2rem;
+		}
+
+	.brand {
+	  	  display: flex;
+	  	  align-items: center;
+	  	  gap: 0.75rem;
+		}	
+
+	.brand h1 {
+	  	  margin: 0;
+		  color: white;
+		}
+
+	.brand i{
+		  color: white;
+		  font-size: 200%
 		}
 
 	.site-nav a {
@@ -96,12 +112,12 @@
 	}
 
 	.site-nav a:hover {
-	  	color: black;
+	  	color: rebeccapurple;
 	}
 
 	.nav-header{
 		  display: flex;
-		   justify-content: center;
+		  justify-content: center;
 		  align-items: center;
 		  border-radius: 8px;
 		  padding: 1rem 2rem
@@ -123,7 +139,7 @@
 	  text-align: center;
 	  font-size: 2.4rem;
 	  margin: 2rem 0;
-	  color: black;
+	  color: rebeccapurple;
 	}
 
 	h2 {
@@ -164,3 +180,32 @@
 		flex-direction: column;
 		gap: 1rem;
 	  }
+
+	div.gallery-grid{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-row-gap: 20px;
+		justify-items: center;
+		align-items: start;
+		justify-content: space-between;
+	}
+
+.gallery-item h3{
+	margin: 0;
+	line-height: 135%;
+	font-size: 90%;
+}
+
+table i{
+	color: rebeccapurple;
+}
+
+.key i{
+	color: rebeccapurple;
+}
+
+.key{
+	display: flex;
+	align-items: left;
+	gap: 0.75rem;
+}
