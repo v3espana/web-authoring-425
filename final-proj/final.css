@@ -5,51 +5,140 @@
 	  margin: 0;
 	  padding: 0;
 	  box-sizing: border-box;
-	  font-family: 'serif';
+	  font-family: 'Inter', 'sans serif'
 	}
+
+/* headers */
+
+.header {
+  text-align: center;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.header-top {
+  background: #06162B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.site-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+.site-title {
+  font-family: 'Oswald', 'sans serif';
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: white
+}
+
+.site-nav {
+  display: flex;
+  gap: 30px;
+  text-decoration: bold;
+}
+
+.site-nav a{
+	font-family: 'Inter', 'sans serif';
+	font-style: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.site-nav a:hover{
+	color: #F5F7FA;
+	opacity: 60%;
+}
+
+.header-mid {
+  background: #D9E1EC;
+}
+
+.page-title {
+  color: #06162B;
+  font-family: 'Oswald', 'sans serif';
+}
+
+.header-bot {
+  display: flex; 
+  justify-content: center;
+  padding: 10px 0px;
+  background: #F5F7FA;
+  gap: 30px;
+  margin-bottom: 0px;
+}
+
+.page-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.page-nav a{
+	font-family: 'Inter', 'sans serif';
+	font-style: bold;
+	color: #06162B;
+	text-decoration: none;
+}
+
+.page-nav a:hover{
+	text-decoration: underline;
+}
+
+/* body */
 
 .wrapper {
 		width: 1000px;
 		padding: 20px 40px;
 		margin: 0 auto;
 		border: 0px red solid;
-		background: #ffffff;
+		background: #F5F7FA;
 	}
 
 body {
-		background: #06162B;
-		color: black;
+		background: #F5F7FA;
+		color: #06162B;
 		line-height: 1.5;
 		}
 
 h1 {
 	  text-align: center;
-	  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	  font-size: 28px;
+	  font: 'Oswald', 'sans serif';
+	  font-size: 32px;
 	  margin: 2rem 0;
 	  color: #0F2E57;
 	}
 
 h2 {
-	  margin-top: 3rem;
-	  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	  margin-top: 1rem;
+	  font-family: 'Oswald', 'sans serif';
 	  margin-bottom: 1rem;
-	  color: black;
+	  font-size: 24px;
+	  color: #06162B;
 	  display: inline-block;
 	  padding-bottom: 0.3rem;
 	}
 
 h3 {
-	  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	  font-family: 'Oswald', 'sans serif';
 	  margin: 1rem 0 0.5rem;
-	  color: black;
+	  font-size: 20px;
+	  color: #06162B;
 	}
 
 p {
-	  color: black;
+	  color: #06162B;
 	  padding-bottom: 1rem;
 	  font-size: 18px;
 	}
+
+a{
+	color: darkred;
+}
 
 div.gallery-grid{
 		display: grid;
@@ -65,3 +154,141 @@ div.gallery-grid{
 		line-height: 135%;
 		font-size: 90%;
 	}
+
+/*article grid 1*/
+
+.article-grid-1 { 
+	background: white;
+	border-radius: 16px;
+ 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	width: 1000px;
+	padding: 40px;
+	margin: 40px auto;
+	display: grid;
+  	gap: 0.5em 1.5em;
+  	grid-template-columns: repeat(6,1fr);
+  	grid-template-rows: repeat(6,auto);
+	grid-template-areas:
+		"rheader rheader rheader rheader rheader rheader"
+		"rlead rlead rlead rlead raside raside"
+		"rinfo rinfo rinfo rinfo  rinfo  rinfo"
+		"rinfo rinfo rinfo rinfo  rinfo  rinfo"
+		"rfooter rfooter rfooter rfooter rfooter rfooter"
+	
+}
+
+.rheader { grid-area: rheader; }
+.rlead   { grid-area: rlead; }
+.rinfo   { grid-area: rinfo; }
+.raside  { grid-area: raside; }
+.rfooter { grid-area: rfooter; }
+
+/*article grid 2*/
+
+.article-grid-2 { 
+	background: white;
+	border-radius: 16px;
+ 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	width: 1000px;
+	padding: 40px;
+	margin: 40px auto;
+	display: grid;
+  	gap: 0.5em 1.5em;
+  	grid-template-columns: repeat(6,1fr);
+  	grid-template-rows: repeat(6,auto);
+	grid-template-areas:
+		"rheader rheader rheader rheader rheader rheader"
+		"rlead rlead rlead rlead raside raside"
+		"rinfo rinfo rinfo rinfo  rinfo  rinfo"
+		"rinfo rinfo rinfo rinfo  rinfo  rinfo"
+		"rfooter rfooter rfooter rfooter rfooter rfooter"
+}
+
+.rheader { grid-area: rheader; }
+.rlead   { grid-area: rlead; }
+.rinfo   { grid-area: rinfo; }
+.raside  { grid-area: raside; }
+.rfooter { grid-area: rfooter; }
+
+.rheader h1, h2{
+	font-family: 'Oswald', 'sans serif';
+	color: #06162B
+}
+
+.rheader h2{
+	font-family: 'Oswald', 'sans serif';
+	color: #06162B
+}
+
+.raside {
+	background: #D9E1EC;
+	padding: 10px 30px;
+	height: 90%;
+	border-radius: 16px;
+ 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.raside ul{
+	padding: 0 15px;
+}
+
+.raside a{
+	font-family: 'Oswald', 'sans serif';
+	font-display: underline;
+	align-content: center;
+	color: #06162B;
+}
+
+.raside a:hover{
+	opacity: 75%;
+}
+
+/* inventory */
+
+.image-grid{
+	background: white;
+	border-radius: 16px;
+ 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	width: 1000px;
+	padding: 40px;
+	margin: 40px auto;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px; 
+  align-items: flex-start;
+}
+
+.image-item {
+  flex: 1; 
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+		width: 100%;
+		border-collapse: collapse;
+  		margin: 15px 0;
+	}
+
+th, td {
+	    padding: 8px 12px;
+	    text-align: left;
+	    border-bottom: 1px solid #ddd;
+	}
+
+/* footer */
+
+.footer{
+	background: #06162B;
+}
+
+.footer p{
+	color: #F5F7FA;
+	padding: 5px;
+}
